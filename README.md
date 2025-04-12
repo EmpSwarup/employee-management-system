@@ -10,15 +10,25 @@ This is a full-stack web application for managing basic employee information, tr
 - Item Usage CRUD operations
 - Monthly Attendance Tracking (Grid View, Checkboxes)
 
-## Technology Stack
+## Tech Stack
 
 - **Frontend:** React (with Vite), TypeScript, React Router, Axios, Formik, Yup, Sonner (for toasts), date-fns, Tailwind CSS, shadcn/ui
 - **Backend:** .NET 9 (Minimal API), C#, Dapper, PostgreSQL, DB Up (for migrations), JWT Bearer Authentication, ASP.NET Core Identity (implicitly via JWT)
 - **Database:** PostgreSQL
 
+## Screenshots
+
+![Login Page](image.png)
+
+![Home Page](image-1.png)
+
+![Employees Page](image-2.png)
+
+![Attendance Page](image-3.png)
+
+![Items Page](image-4.png)
 
 ## Backend Setup & Usage
-
 
 ### Prerequisites:
 - .NET 9 SDK (or the version specified in global.json/csproj)
