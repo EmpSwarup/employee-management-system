@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>employee_management_backend</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Dapper" Version="2.1.66" />
+    <PackageReference Include="dbup-postgresql" Version="6.0.3" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.4" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.2" />
+    <PackageReference Include="Npgsql" Version="9.0.3" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="8.1.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Scripts\001_CreateUsersTable.sql" />
+    <EmbeddedResource Include="Scripts\001_CreateUsersTable.sql" />
+    <None Remove="Scripts\002_CreateEmployeesTable.sql" />
+    <EmbeddedResource Include="Scripts\002_CreateEmployeesTable.sql" />
+    <None Remove="Scripts\003_CreateItemUsageTables.sql" />
+    <EmbeddedResource Include="Scripts\003_CreateItemUsageTables.sql" />
+    <None Remove="Scripts\004_CreateAttendanceRecordsTable.sql" />
+    <EmbeddedResource Include="Scripts\004_CreateAttendanceRecordsTable.sql" />
+  </ItemGroup>
+
+</Project>

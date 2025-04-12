@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS public."Users" (
+    "Id" SERIAL PRIMARY KEY,
+    "Email" VARCHAR(255) NOT NULL UNIQUE,
+    "PasswordHash" VARCHAR(255) NOT NULL,
+    "CreatedAt" TIMESTAMPTZ NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE INDEX IF NOT EXISTS idx_users_email ON public."Users" ("Email");
